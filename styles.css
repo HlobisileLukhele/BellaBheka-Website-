@@ -2,3 +2,36 @@
     margin:0;
     padding:0;
 }
+body {
+    font-family: sans-serif,arial;
+    font-size: 15px;
+}
+/* Styling navigation bar*/
+
+.navbar-brand{
+
+    font-size: 20px;
+     font-family: firsthand;
+     @import url(https://fonts.google.com/specimen/Fasthand?preview.size=24);
+     color:darkmagenta;
+     font-weight: bold;
+}
+.container-fluid {
+    display:flex;
+}
+.nav-link{
+    float:right;
+    justify-content: flex-end;
+    overflow:hidden;
+    font-family: Arial;
+    font-weight: 200px;
+    color:rgb(228, 161, 228);
+    margin-right: 20px;
+    padding: 16px 18px 20px 
+}
+.nav-link:hover {
+    background-color:rgb(228, 161, 228) ;
+    color:gray;
+    font-weight: bold;
+    border-radius: 7px 20px 5px;
+}
