@@ -13,7 +13,7 @@ body {
     font-size: 20px;
      font-family: firsthand;
      @import url(https://fonts.google.com/specimen/Fasthand?preview.size=24);
-     color:darkmagenta;
+     color:#9e367b;
      font-weight: bold;
 }
 .container-fluid {
@@ -25,13 +25,88 @@ body {
     overflow:hidden;
     font-family: Arial;
     font-weight: 200px;
-    color:rgb(228, 161, 228);
+    color:#9e367b;
     margin-right: 20px;
     padding: 16px 18px 20px 
 }
 .nav-link:hover {
-    background-color:rgb(228, 161, 228) ;
+    background-color:#cc71ae ;
     color:gray;
     font-weight: bold;
     border-radius: 7px 20px 5px;
 }
+.carousel-slide {
+
+}
+
+.first-heading {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: gray;
+    margin:28px 35px 25px 20px ;
+   text-align:center
+
+}
+.secondName{
+    font-family: Tahoma;
+    font-size: 18px;
+    color:#b44e8d;
+    font-weight: bold;
+    margin-left: 7px;
+    
+}
+.button-sliding-to-top--red{
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid #b44e8d;
+  color: #9e367b;
+  margin-right: 15px;
+  margin-left:85px;
+  align-items: center;
+  position: absolute;
+  left: 20%;
+  
+}
+
+.button-sliding-to-top--red:hover {
+  color: #fff;
+}
+.button-sliding-to-top--red:hover:after {
+  height: 100%;
+}
+.button-sliding-to-top--red:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background:#9e367b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
