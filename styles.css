@@ -6,8 +6,10 @@ body {
     font-family: sans-serif,arial;
     font-size: 15px;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* Styling navigation bar*/
-
 .navbar-brand{
 
     font-size: 20px;
@@ -27,18 +29,32 @@ body {
     font-weight: 200px;
     color:#9e367b;
     margin-right: 20px;
-    padding: 16px 18px 20px 
+    padding: 16px 18px 20px;
 }
+/*adding hover effect to the nav-link*/
 .nav-link:hover {
     background-color:#cc71ae ;
     color:gray;
     font-weight: bold;
     border-radius: 7px 20px 5px;
 }
-.carousel-slide {
+#navbar-expand-lg bg-body-tertiary{
 
 }
-
+/*Adding carousel slide-show to the first show*/
+#carouselExampleAutoplaying{
+ margin-top: 15%;
+}
+#about-us,#Services,#Portfoli,#Contact-us {
+  height: 700px ;
+}
+#home{
+  height: 100%;
+}
+#about-us {
+  margin-top: 10px;
+}
+/*styling the content, font of the website's content*/
 .first-heading {
     font-family: sans-serif;
     font-size: 20px;
@@ -55,6 +71,7 @@ body {
     margin-left: 7px;
     
 }
+/*styling the button,making is responsive */
 .button-sliding-to-top--red{
   min-width: 130px;
   height: 40px;
@@ -73,13 +90,15 @@ body {
   border: 2px solid #b44e8d;
   color: #9e367b;
   margin-right: 15px;
-  margin-left:85px;
+  margin-left:60px;
   align-items: center;
   position: absolute;
   left: 20%;
+  margin-top: 0px;
+  
   
 }
-
+/*adding sliding hovering effect to the button*/
 .button-sliding-to-top--red:hover {
   color: #fff;
 }
@@ -97,10 +116,55 @@ body {
   width: 100%;
   background:#9e367b;
 }
+/*styling a vertical line */
+.v1 {
+  border-left: 6px solid #b44e8d;
+  height: 175px;
+  position: relative;
+  left: 5%;
+  margin-left: 15px;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 45px;
+}
+/*stying the introduction text*/
+.hookup-text{
+  margin-top: 115px;
+  font-family:helvetica;
+  margin-left: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  color: #cc71ae;
+}
+/* applying slide in text animation to the first paragraph*/
+.first-intro {
+  font-size: 15px;
+  font-family: 'Lucida Sans';
+  text-align: center;
+  word-spacing: 5px;
+  line-height: 1.4;
+}
+div .slide-left {
+  width: 100%;
+  overflow:hidden;
 
-
-
-
+}
+div .slide-left-p {
+  animation:slide-right 15s;
+  
+}
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 
 
 
