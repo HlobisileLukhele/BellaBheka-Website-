@@ -38,21 +38,21 @@ html{
     font-weight: bold;
     border-radius: 7px 20px 5px;
 }
-#navbar-expand-lg bg-body-tertiary{
 
-}
 /*Adding carousel slide-show to the first show*/
 #carouselExampleAutoplaying{
  margin-top: 15%;
 }
-#about-us,#Services,#Portfoli,#Contact-us {
+#Services,#Portfoli,#Contact-us {
   height: 700px ;
 }
 #home{
   height: 100%;
 }
 #about-us {
-  margin-top: 10px;
+  margin-top: 5px;
+  background-color: #f8f3f7;
+  height: 620px;
 }
 /*styling the content, font of the website's content*/
 .first-heading {
@@ -89,14 +89,12 @@ html{
   overflow: hidden;
   border: 2px solid #b44e8d;
   color: #9e367b;
-  margin-right: 15px;
-  margin-left:60px;
+  margin-right: 5px;
+  margin-left:45px;
   align-items: center;
   position: absolute;
   left: 20%;
   margin-top: 0px;
-  
-  
 }
 /*adding sliding hovering effect to the button*/
 .button-sliding-to-top--red:hover {
@@ -116,42 +114,36 @@ html{
   width: 100%;
   background:#9e367b;
 }
-/*styling a vertical line */
-.v1 {
-  border-left: 6px solid #b44e8d;
-  height: 175px;
-  position: relative;
-  left: 5%;
-  margin-left: 15px;
-  top: 0;
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 45px;
-}
 /*stying the introduction text*/
 .hookup-text{
-  margin-top: 115px;
+  margin-top: 30%;
+  padding-top: 15px;
   font-family:helvetica;
-  margin-left: 5px;
   text-align: center;
   font-weight: bold;
   font-size: 12px;
   color: #cc71ae;
 }
 /* applying slide in text animation to the first paragraph*/
-.first-intro {
+.first-touch, .second-touch,.first-intro,.last-touch{
   font-size: 15px;
-  font-family: 'Lucida Sans';
+  word-wrap: normal;
   text-align: center;
   word-spacing: 5px;
   line-height: 1.4;
+  font-weight: 5px;
 }
-div .slide-left {
+/*styling a vertical line */
+.slide-left p {
+  text-align: center;
+
+}
+.slide-left {
   width: 100%;
   overflow:hidden;
 
 }
-div .slide-left-p {
+.slide-left-p {
   animation:slide-right 15s;
   
 }
@@ -165,12 +157,9 @@ div .slide-left-p {
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
+.services-intro {
+  color: #974779;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  margin-top: 10px;
+}
