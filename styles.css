@@ -1,9 +1,10 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body {
-    font-family: sans-serif,arial;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 15px;
 }
 html{
@@ -38,7 +39,6 @@ html{
     font-weight: bold;
     border-radius: 7px 20px 5px;
 }
-
 /*Adding carousel slide-show to the first show*/
 #carouselExampleAutoplaying{
  margin-top: 15%;
@@ -55,7 +55,8 @@ html{
   height: 620px;
 }
 #Services{
-  height:900px
+  height:1400px;
+  width:100%;
 }
 #Contact-us{
   height:900px
@@ -67,7 +68,6 @@ html{
     color: gray;
     margin:28px 35px 25px 20px ;
    text-align:center
-
 }
 .secondName{
     font-family: Tahoma;
@@ -75,7 +75,6 @@ html{
     color:#b44e8d;
     font-weight: bold;
     margin-left: 7px;
-    
 }
 /*styling the button, making is responsive */
 .button-sliding-to-top--red{
@@ -144,60 +143,59 @@ html{
   color: #682050;
   font-weight: bold;
 }
-/*styling a vertical line */
-.slide-left p {
-  text-align: center;
-
-}
-.slide-left {
-  width: 100%;
-  overflow:hidden;
-
-}
-.slide-left-p {
-  animation:slide-right 15s;
-  
-}
-@keyframes slide-left {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
+/*styling the services page*/
 .services-intro {
   color: #974779;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT';
   text-align: center;
   margin-top: 10px;
   font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Styling the column with services listed*/
+.column {
+  float: left;
+  width: 25%;
+  padding:0 10px;
+  margin-top: 15px;
+}
+/* Clear float after the columns*/
+.row {
+  margin: 0 --5px /*remove left and right margins*/
+}
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* Styling the counter cards */
+.card {
+box-shadow:0 4px 8px rgba(0, 0, 0, 0);
+padding:16px;
+text-align:center;
+background-color:#f0b6dc;
+margin-top: 5px;
+margin-bottom: 5px;
+border: 5px solid black;
+}
+/*Responsive layout : when the screen us less than 600pc wide ,make the three
+columns stack on top of each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+/*Styling the content of the services  */
+ul{
+  list-style-type: none; 
+}
 .contact-form {
   background-color: #f2f2f2;
   padding: 20px;
   border-radius: 10px;
 }
-
 .contact-form label {
   color: black;
 }
-
 .contact-form .heading {
   font-size: 24px;
   color: black;
@@ -206,36 +204,30 @@ html{
   font-weight: bold;
   display: block;
 }
-
 .contact-form form {
   display: flex;
   flex-direction: column;
 }
-
 .contact-form label {
   margin-bottom: 10px;
 }
-
 textarea {
   resize: none;
   height: 80px;
   width: 200px;
 }
-
 .contact-form input, .contact-form textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
   margin-bottom: 20px;
 }
-
 .contact-form input:focus, .contact-form textarea:focus {
   outline: none;
   box-shadow: 0 0 5px #943e5f;
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
 }
-
 .contact-form button[type="submit"] {
   background-color: #b14f8b;
   color: #fff;
@@ -245,7 +237,6 @@ textarea {
   font-size: 16px;
   cursor: pointer;
 }
-
 .contact-form button[type="submit"]:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
