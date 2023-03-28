@@ -43,8 +43,8 @@ html{
 #carouselExampleAutoplaying{
  margin-top: 15%;
 }
-#Services,#Portfoli,#Contact-us {
-  height: 700px ;
+#Portfoli {
+  height:700px ;
 }
 #home{
   height: 100%;
@@ -53,6 +53,12 @@ html{
   margin-top: 5px;
   background-color: #f8f3f7;
   height: 620px;
+}
+#Services{
+  height:900px
+}
+#Contact-us{
+  height:900px
 }
 /*styling the content, font of the website's content*/
 .first-heading {
@@ -133,6 +139,11 @@ html{
   line-height: 1.4;
   font-weight: 5px;
 }
+.span-text {
+  font-family:cursive;
+  color: #682050;
+  font-weight: bold;
+}
 /*styling a vertical line */
 .slide-left p {
   text-align: center;
@@ -162,4 +173,80 @@ html{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-align: center;
   margin-top: 10px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form .heading {
+  font-size: 24px;
+  color: black;
+  ;
+  margin-bottom: 12px;
+  font-weight: bold;
+  display: block;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+  width: 200px;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 5px #943e5f;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-form button[type="submit"] {
+  background-color: #b14f8b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
