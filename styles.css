@@ -44,10 +44,11 @@ html{
  margin-top: 15%;
 }
 #Portfoli {
-  height:700px ;
+  height:9000px ;
 }
 #home{
   height: 100%;
+  width:100%;
 }
 #about-us {
   margin-top: 5px;
@@ -181,12 +182,13 @@ border: 5px solid black;
 columns stack on top of each other */
 @media screen and (max-width: 600px) {
   .column {
-    width: 100%;
-  }
+    width:100%;
+    display:block;
+    margin-bottom  }
 }
 /*Styling the content of the services  */
 ul{
-  list-style-type: none; 
+  list-style-type:none; 
 }
 .contact-form {
   background-color: #f2f2f2;
