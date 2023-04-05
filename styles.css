@@ -6,18 +6,23 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
     font-size: 15px;
+   
 }
 html{
   scroll-behavior: smooth;
+  width: 100%;
+  
 }
 /* Styling navigation bar*/
 .navbar-brand{
-
     font-size: 20px;
      font-family: firsthand;
      @import url(https://fonts.google.com/specimen/Fasthand?preview.size=24);
      color:#9e367b;
      font-weight: bold;
+}
+.section {
+  background-color: #f8f3f7;
 }
 .container-fluid {
     display:flex;
@@ -28,39 +33,41 @@ html{
     overflow:hidden;
     font-family: Arial;
     font-weight: 200px;
-    color:#9e367b;
+    color:black;
     margin-right: 20px;
     padding: 16px 18px 20px;
 }
 /*adding hover effect to the nav-link*/
 .nav-link:hover {
-    background-color:#cc71ae ;
-    color:gray;
+  background-color:#cf62a6;
     font-weight: bold;
     border-radius: 7px 20px 5px;
 }
+.nav-link:active {
+  color: #682050;
+
+}
 /*Adding carousel slide-show to the first show*/
 #carouselExampleAutoplaying{
- margin-top: 15%;
+ margin-top: 12%;
 }
 #Portfoli {
   height:9000px ;
+  
 }
 #home{
-  height: 100%;
+  height:600px;
   width:100%;
+ 
 }
 #about-us {
-  margin-top: 5px;
-  background-color: #f8f3f7;
-  height: 620px;
+ 
+  height: 480px;
 }
 #Services{
-  height:1400px;
+  height:1350px;
   width:100%;
-}
-#Contact-us{
-  height:900px
+  
 }
 /*styling the content, font of the website's content*/
 .first-heading {
@@ -79,7 +86,6 @@ html{
 }
 /*styling the button, making is responsive */
 .button-sliding-to-top--red{
-  min-width: 130px;
   height: 40px;
   color: #fff;
   padding: 5px 10px;
@@ -145,55 +151,114 @@ html{
   font-weight: bold;
 }
 /*styling the services page*/
-.services-intro {
-  color: #974779;
-  font-family: 'Gill Sans', 'Gill Sans MT';
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Styling the container cards */
+.div { display: block;
+}
+.mbr-section-title {
   text-align: center;
-  margin-top: 10px;
+}
+.display-2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+ /*styling the services section*/
+ .services-intro {
+  font-style: normal;
+  line-height: 1.2;
+  color: #b14f8b;
+  font-style: helvetica;
+  font-size: 28px;
+  margin-top: 28px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.card-box {
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+  height: 340px;
+  width: 100%;
+ 
+}
+h3 {
+  display: block;
+  display: block;
+  font-size: 15px;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   font-weight: bold;
 }
-/* Styling the column with services listed*/
-.column {
-  float: left;
-  width: 25%;
-  padding:0 10px;
-  margin-top: 15px;
-}
-/* Clear float after the columns*/
-.row {
-  margin: 0 --5px /*remove left and right margins*/
-}
-.row:after {
-  content: " ";
-  display: table;
-  clear: both;
-}
-/* Styling the counter cards */
-.card {
-box-shadow:0 4px 8px rgba(0, 0, 0, 0);
-padding:16px;
-text-align:center;
-background-color:#f0b6dc;
-margin-top: 5px;
-margin-bottom: 5px;
-border: 5px solid black;
-}
-/*Responsive layout : when the screen us less than 600pc wide ,make the three
-columns stack on top of each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width:100%;
-    display:block;
-    margin-bottom  }
-}
+/*Responsive layout : when the screen is less than 922px wide */
+@media only screen and (min-width: 992px) {
+  .nav-link a {
+    display: flex;
+    justify-content: flex-end;
+    float: left;
+    margin-bottom: 10px;
+  }
+  #carouselExampleAutoplaying{
+    margin-top: 3%;
+   }
+   .first-heading {
+    font-size:28px ;
+    font-weight: bold;
+   }
+   .secondName{
+    font-size: 25px;
+   }
+   .button-sliding-to-top--red{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-right: 50%;
+   }
+  }
+  /*Responsive layout : when the screen is less than 700px wide*/
+  @media screen and { max-width:
+    
+  }
 /*Styling the content of the services  */
 ul{
-  list-style-type:none; 
+  list-style-type: none; 
+  text-decoration: none;
+  text-align: center;
+}
+/*Styling the Portflio*/
+.row .portfolio {
+  display:column;
+  grid-template-columns: 4;
+  grid-row: inherit;
+  grid-row: 4;
+  padding: 0 4px;
+}
+/* Create two equal columns that sits next to each other */
+.column .portfolio{
+  flex: 50%;
+  padding: 0 4px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+#Contact-us{
+  margin-top: 20px;
+  height: 1600px;
+  background-color: #f8f3f7;
 }
 .contact-form {
-  background-color: #f2f2f2;
+  background-color: #e6d5df;
   padding: 20px;
   border-radius: 10px;
+  display: flex;
 }
 .contact-form label {
   color: black;
@@ -204,11 +269,12 @@ ul{
   ;
   margin-bottom: 12px;
   font-weight: bold;
-  display: block;
+ 
 }
 .contact-form form {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .contact-form label {
   margin-bottom: 10px;
@@ -242,4 +308,17 @@ textarea {
 .contact-form button[type="submit"]:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
+}
+.maps {
+  margin-top: 30px;
+  margin: 20px 10px 20px ;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.footer {
+  background-color: #490e34;
+  height: 50px;
+
+
 }
