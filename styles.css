@@ -49,11 +49,14 @@ html{
 }
 /*Adding carousel slide-show to the first show*/
 #carouselExampleAutoplaying{
- margin-top: 12%;
+ margin-top: 12% ;
+ border:  10pt transparent;
+}
+#carouselExampleAutoplaying img {
+  height: 60%;
 }
 #Portfoli {
   height:9000px ;
-  
 }
 #home{
   height:850px;
@@ -61,13 +64,15 @@ html{
  
 }
 #about-us {
- 
-  height: 480px;
+  height: 380px;
 }
 #Services{
-  height:1350px;
+  height:1750px;
   width:100%;
-  
+}
+.contact-us {
+  height:1350px;
+  width:100%
 }
 /*styling the content, font of the website's content*/
 .first-heading {
@@ -80,7 +85,7 @@ html{
 .secondName{
     font-family: sans-serif;
     font-size: 18px;
-    color:#ad508a;
+    color:#9e367b;
     font-weight: bold;
     margin-left: 7px;
     margin:28px 35px 25px 20px ;
@@ -128,17 +133,18 @@ html{
 }
 /*stying the introduction text*/
 .hookup-text{
-  margin-top: 31%;
+  margin-top: 33%;
   padding-top: 15px;
   font-family:helvetica;
   text-align: center;
   font-weight: bold;
-  font-size: 15px;
-  color: #cc71ae;
+  font-size: 18px;
+  color: #9e367b;
+  
 }
 /* applying slide in text animation to the first paragraph*/
 .first-touch, .second-touch,.first-intro,.last-touch{
-  font-size: 15px;
+  font-size: 20px;
   word-wrap: normal;
   text-align: center;
   word-spacing: 5px;
@@ -157,10 +163,7 @@ html{
   padding-right: 15px;
   padding-left: 15px;
 }
-
 /* Styling the container cards */
-.div { display: block;
-}
 .mbr-section-title {
   text-align: center;
 }
@@ -170,34 +173,26 @@ html{
 }
  /*styling the services section*/
  .services-intro {
-  font-style: normal;
   line-height: 1.2;
-  color: #b14f8b;
+  color: #9A208C;
   font-style: helvetica;
+  font-weight: bold;
   font-size: 28px;
   margin-top: 28px;
   margin-bottom: 18px;
   text-align: center;
 }
-
+/*stying the card ofr services information*/
 .card-box {
   margin-right: 5px;
   margin-left: 5px;
   text-align: center;
-  height: 340px;
+  height: 600px;
   width: 100%;
- 
+  background-color:#e9dfdfee ;
+  border: 50pt solid #e9dfdfee  ;
 }
-h3 {
-  display: block;
-  display: block;
-  font-size: 15px;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
+
 /*Responsive layout : when the screen is less than 922px wide */
 @media only screen and (min-width: 992px) {
   .nav-link a {
@@ -236,36 +231,64 @@ h3 {
     /*styling Navigation bar*/
 
     .nav-link {
-      
+      float: left;
         }
     .button-sliding-to-top--red {
-      left: 25%;
+      left: 20%;
       margin-bottom: 0px;;
     }
+    /*sections margins and sizes*/
     .home{
-      height: 100px;
+      height: 250px;
       width: 100%;
-      margin-bottom: 5px;
       background-color: #FFEAEA;
     }
     .about-us {
-      height: 120px;
+      height: 550px;
       background-color: #FFEAEA;
     }
+    .services {
+      height:1350px;
+      width:100%;
+    }
     .secondName {
-      font-size: 20px;
-      margin-right: 5px;
+      font-size: 16px
     }
     .hookup-text{
       margin-top:0px;
-      font-size: 20px;
+      font-size: 18px;
       color: #9e367b;
       }
     .first-heading {
-      font-size: 25px;
+      font-size: 18px;
+      margin-top: 12px;;
     }
+    .first-touch, .second-touch,.first-intro,.last-touch{
+      font-size: 16px;
+      word-wrap: normal;
+      text-align: center;
+      word-spacing: 5px;
+      line-height: 1.4;
+      font-weight: 5px;
+      font-family: sans-serif;
 
     }
+    /*styling the services card */
+    .card-box {
+      margin-right: 5px;
+      margin-left: 5px;
+      text-align: center;
+      height: 480px;
+      width: 100%;
+      background-color:#e9dfdfee ;
+    }
+    /*Styling the contact section */
+    .contact-us {
+      height:1350px;
+      width:100%
+    }
+    
+  }
       
 /*Styling the content of the services  */
 ul{
