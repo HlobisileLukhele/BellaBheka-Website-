@@ -183,8 +183,6 @@ html{
 }
 /*stying the card ofr services information*/
 .card-box {
-  margin-right: 5px;
-  margin-left: 5px;
   text-align: center;
   height: 400px;
   width: 100%;
@@ -198,11 +196,13 @@ html{
   margin-top: 240px;
 }
 .align-items-start {
-  border: 1pt solid #9e367b;
+  display: flex;
+  justify-content: flex-start;
 }
 .row {
   margin-top: 25px;
   row-gap: 2.5rem;
+  column-gap: 2px;
  
 }
 /*styling the contact section */
@@ -229,9 +229,7 @@ html{
     margin-top: 150px;
    }
    .row {
-    margin-top: 25px;
-    row-gap: 2.5rem;
-    border: 1pt solid black;
+    column-gap: 10px;
   }
    .button-sliding-to-top--red{
     align-items: center;
@@ -311,6 +309,11 @@ html{
       margin-bottom: 150px;
       border: 1pt blue;
     }
+    .row {
+      margin-top: 25px;
+      row-gap: 2.5rem;
+      column-gap: 10px;
+    }
     /*Styling the contact section */
     .contact-us {
       height:1350px;
@@ -331,7 +334,79 @@ ul{
   grid-row: 4;
   padding: 0 4px;
 }
-/* Create two equal columns that sits next to each other */
-.email-details {
- 
+/* styling the contact section */
+
+.form-contact {
+  margin-bottom: 35px;
+  display: center;
+  color: #9e367b;
+  right: 15px;
+}
+.label {
+  font: size 25px; 
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.email-section {
+  margin-top: 15px;
+}
+.form-control {
+  margin-top: 15px;
+  margin-top: 15px;
+}
+.form-control:active {
+  color:#b44e8d;
+}
+input:active {
+  color:#b44e8d;
+}
+.contact-form-button,.btn {
+  padding-right: 5px;
+  padding-left:5px;
+  border: 1pt solid #b44e8d;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #791d57;
+}
+button {
+  padding-right: 5px;
+  padding-left:5px;
+  border: 1pt solid #b44e8d;
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #791d57;
+}
+.map {
+  margin-bottom: 35px;
+  display: center;
+  color: #9e367b;
+  
+}
+.contact-info,h4 {
+  margin-bottom: 35px;
+  display: center;
+  color: #9e367b;
+  right: 15px;
+}
+.Contact_address {
+  margin-top: 5px;;
+  line-height: 5px;
+}
+.email-us,h4 {
+  color: #9e367b;
+}
+.follow-us {
+  color: #9e367b;
+  margin-bottom: 18px;
+  align-items: center;
+}
+.social-link {
+  color: #55163f;
+  padding: 15px 10px 10px;
+  align-items: center;
+  padding-left: 45px;
 }
