@@ -409,4 +409,10 @@ button {
   padding: 15px 10px 10px;
   align-items: center;
   padding-left: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  transition: all 300ms ease;
+}
+.social-link:hover {
+  color: #55163f;
 }
