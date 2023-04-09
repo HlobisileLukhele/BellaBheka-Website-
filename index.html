@@ -13,7 +13,6 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--title of the website-->
     <title>BellaBheka Website</title>
-
 </head>
 <body>
   <section id="home">
@@ -104,7 +103,7 @@
   <div class="row justify-content-center align-items-start">
       <div class="card px-3 py-4 col-md-4">
           <div class="card-wrapper flip-card">
-              <div class="card-box">
+              <div class="card-box card-box-1">
                   <h3><span class="services-title">Event Co-ordinating</span></h3>
                   <p class="mbr-card-text mbr-fonts-style align-center display-7">
                     <p class="event-one-list">
@@ -125,7 +124,7 @@
       <!--second-service listed -->
       <div class="card px-3 py-4 col-md-4">
           <div class="card-wrapper flip-card">
-              <div class="card-box">
+              <div class="card-box card-box-2">
                   <h3><span class="services-title">Decor and Catering</span></h3>
                   <p class="mbr-card-text mbr-fonts-style align-center display-7"></p>
                     <p class="service-two-list">
@@ -141,11 +140,10 @@
               </div>
           </div>
       </div>
-      
        <!--Third services listed-->
       <div class="card px-3 py-4 col-md-4 card_services">
           <div class="card-wrapper flip-card">
-              <div class="card-box">
+              <div class="card-box card-box-3">
                   <h3><span class="services-title">Accomodation</span></h3>
             <p class="mbr-card-text mbr-fonts-style align-center display-7">
                     <p class="event-one-list">
@@ -170,14 +168,13 @@
  </div>
       </section>
       <section id="Portfolio">
-       
-        </div>
-     
-  <section class="#Contact-us" id="contact-us">
+        <!--adding portfolio content-->
+        </section>
+  <section class="#Contact-us" id="Contact-us">
         <!--Contact form-->
         <footer class="contact-us">
-          <h3 class="contact-heading">Contact Us</h3>
-          <footer class="bg-light text-light py-5">
+          <!--addimg contact form-->
+          <footer class="bg-light text-purple py-5">
             <div class="container">
               <div class="row">
                 <div class="col-md-6">
@@ -195,15 +192,16 @@
                       <label for="message">Message</label>
                       <textarea class="form-control" id="message" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-tertiary">Submit</button>
+                    <button type="submit" class="btn btn contact-form-button">Submit</button>
                   </form>
                 </div>
+                <!--adding map with location pinned-->
                 <div class="col-md-6">
-                  <h3>Location</h3>
+                  <h3 class="map">Location</h3>
                   <div id="map" style="height: 200px;"></div>
                   <script>
                     function initMap() {
-                      var location = {lat: 37.7749, lng: -122.4194}; // Change these coordinates to your desired location
+                      var location = {lat: 29.74560, lng: 30.99210}; // Change these coordinates to your desired location
                       var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 14,
                         center: location
@@ -220,25 +218,24 @@
               <div class="row mt-3">
                 <div class="col-md-4">
                   <h4>Contact Information</h4>
-                  <p>1234 Main Street</p>
-                  <p>San Francisco, CA 94102</p>
+                  <p class="Contact_address">137 Sikhindi Road</p>
+                  <p class="Contact_address">KwaMashu</p>
+                  <p class="Contact_address">Sou Africa, KZN 4359</p>
                   <p>(123) 456-7890</p>
                 </div>
-                <div class="col-md-4">
-                  <h4>Email Us</h4>
-                  <p>info@example.com</p>
+                <div class="col-md-4" class="email-details">
+                  <h4 class="email-address">Email Us</h4>
+                  <p class="email-address">MhlophekaziKhumalo@gmail.com</p>
                 </div>
-                <div class="col-md-4">
-                  <h4>Follow Us</h4>
-                  <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                  <a href="#"><i class="fab fa-whatsapp fa-2x"></i></a>
-                  <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                <div class="col-md-4 social-links">
+                  <h4 class="follow-us">Follow Us</h4>
+                  <a href="#"><i class="fab fa-facebook fa-2x social-link"></i></a>
+                  <a href="#"><i class="fab fa-whatsapp fa-2x social-link"></i></a>
+                  <a href="#"><i class="fab fa-instagram fa-2x social-link"></i></a>
                 </div>
               </div>
             </div>
           </footer>
-          
-
         </footer>
       </section>
       

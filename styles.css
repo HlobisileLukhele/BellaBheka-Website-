@@ -71,7 +71,7 @@ html{
   width:100%;
 }
 .contact-us {
-  height:1350px;
+  height:650px;
   width:100%
 }
 /*styling the content, font of the website's content*/
@@ -140,7 +140,6 @@ html{
   font-weight: bold;
   font-size: 18px;
   color: #9e367b;
-  
 }
 /* applying slide in text animation to the first paragraph*/
 .first-touch, .second-touch,.first-intro,.last-touch{
@@ -187,11 +186,26 @@ html{
   margin-right: 5px;
   margin-left: 5px;
   text-align: center;
-  height: 600px;
+  height: 400px;
   width: 100%;
-  background-color:#e9dfdfee ;
-  border: 50pt solid #e9dfdfee  ;
 }
+.services-title {
+  font-family:sans-serif ;
+  color: #791d57;
+  font-weight: bold;
+}
+.services-intro {
+  margin-top: 240px;
+}
+.align-items-start {
+  border: 1pt solid #9e367b;
+}
+.row {
+  margin-top: 25px;
+  row-gap: 2.5rem;
+ 
+}
+/*styling the contact section */
 
 /*Responsive layout : when the screen is less than 922px wide */
 @media only screen and (min-width: 992px) {
@@ -211,6 +225,14 @@ html{
    .secondName{
     font-size: 25px;
    }
+   .align-items-start {
+    margin-top: 150px;
+   }
+   .row {
+    margin-top: 25px;
+    row-gap: 2.5rem;
+    border: 1pt solid black;
+  }
    .button-sliding-to-top--red{
     align-items: center;
     display: flex;
@@ -242,14 +264,17 @@ html{
       height: 250px;
       width: 100%;
       background-color: #FFEAEA;
+      margin-bottom: 5%;
     }
     .about-us {
       height: 550px;
       background-color: #FFEAEA;
+      margin-bottom: 60px;
     }
     .services {
       height:1350px;
       width:100%;
+      margin-top: 5px;;
     }
     .secondName {
       font-size: 16px
@@ -278,18 +303,20 @@ html{
       margin-right: 5px;
       margin-left: 5px;
       text-align: center;
-      height: 480px;
+      height: 350px;
       width: 100%;
-      background-color:#e9dfdfee ;
+      border: 1pt blue;
+    }
+    .align-items-start{
+      margin-bottom: 150px;
+      border: 1pt blue;
     }
     /*Styling the contact section */
     .contact-us {
       height:1350px;
       width:100%
     }
-    
   }
-      
 /*Styling the content of the services  */
 ul{
   list-style-type: none; 
@@ -305,84 +332,6 @@ ul{
   padding: 0 4px;
 }
 /* Create two equal columns that sits next to each other */
-.column .portfolio{
-  flex: 50%;
-  padding: 0 4px;
-}
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}
-#Contact-us{
-  margin-top: 20px;
-  height: 1600px;
-  background-color: #f8f3f7;
-}
-.contact-form {
-  background-color: #e6d5df;
-  padding: 20px;
-  border-radius: 10px;
-  display: flex;
-}
-.contact-form label {
-  color: black;
-}
-.contact-form .heading {
-  font-size: 24px;
-  color: black;
-  ;
-  margin-bottom: 12px;
-  font-weight: bold;
+.email-details {
  
-}
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.contact-form label {
-  margin-bottom: 10px;
-}
-textarea {
-  resize: none;
-  height: 80px;
-  width: 200px;
-}
-.contact-form input, .contact-form textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-.contact-form input:focus, .contact-form textarea:focus {
-  outline: none;
-  box-shadow: 0 0 5px #943e5f;
-  transform: scale(1.05);
-  transition: transform 0.3s ease-in-out;
-}
-.contact-form button[type="submit"] {
-  background-color: #b14f8b;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-.contact-form button[type="submit"]:hover {
-  transform: scale(1.1);
-  transition: transform 0.3s ease-in-out;
-}
-.maps {
-  margin-top: 30px;
-  margin: 20px 10px 20px ;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.footer {
-  background-color: #490e34;
-  height: 50px;
-
-
 }
