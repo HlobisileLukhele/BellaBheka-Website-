@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--linkng stylesheet file-->
     <link rel="stylesheet" href="styles.css">
+     <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!--Adding boostrap files-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
    <!--Adding fontawesome icons-->
@@ -17,24 +22,36 @@
 <body>
   <section id="home">
 <!--Loading the navigation bar-->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand logo_name" href="#Home"><i>BellaBheka</i></a>
-    <button class="navbar-toggler" type="button"data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-          <!--Navigation links-->
-        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-        <a class="nav-link" href="#about-us">About Us</a>
-        <a class="nav-link" href="#Services">Services</a>
-        <a class="nav-link" href="#Portfolio">Portfolio</a>
-        <a class="nav-link" href="#Contact-us">Contact Us</a>
-      </div>
-    </div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#"><em>BellaBheka</em></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
   </div>
 </nav>
+  </div>
+  <script>
+  $(document).ready(function(){
+  $('.navbar-toggler').click(function(){
+    $('.navbar-collapse').toggleClass('show');
+  })
+});
+  </script>
 <main>
  <!--loading carousel slide container-->
  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
@@ -54,7 +71,7 @@
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="carousel-control-prev-icon" aria-hidden="true" style="height: 300px;"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
@@ -124,7 +141,7 @@
       <!--second-service listed -->
       <div class="card px-3 py-4 col-md-4">
           <div class="card-wrapper flip-card">
-              <div class="card-box card-box-2">
+              <div class="card-box card-box-2" style="max-width: 500px;">
                   <h3><span class="services-title">Decor and Catering</span></h3>
                   <p class="mbr-card-text mbr-fonts-style align-center display-7"></p>
                     <p class="service-two-list">
@@ -169,6 +186,34 @@
       </section>
       <section id="Portfolio">
         <!--adding portfolio content-->
+        <div class="container-fluid">
+          <h2>Our Portfolio</h2>
+          <div class="container-fluid">
+            <div class="overflow-x-scroll" style="height: 300px;">
+              <div class="row">
+                <div class="col-md-4 col-sm-12">
+                  <img src="images/BellaBheka Pictures/Portfolio/IMG-5083.PNG"claass="img-fluid">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <img src="images/"class="img-fluid">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <img src="https://via.placeholder.com/500x500.png?text=Portfolio+Item+3" class="img-fluid">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <img src="https://via.placeholder.com/500x500.png?text=Portfolio+Item+4" class="img-fluid">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <img src="https://via.placeholder.com/500x500.png?text=Portfolio+Item+5" class="img-fluid">
+                </div>
+                <div class="col-md-4 col-sm-12">
+                  <img src="https://via.placeholder.com/500x500.png?text=Portfolio+Item+6" class="img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        
         </section>
   <section class="#Contact-us" id="Contact-us">
         <!--Contact form-->
@@ -185,34 +230,22 @@
                       <input type="text" class="form-control" id="name" placeholder="Enter your name">
                     </div>
                     <div class="form-group">
-                      <label for="email" class="email-section">Email address</label>
+                      <label for="email">Email address</label>
                       <input type="email" class="form-control" id="email" placeholder="Enter your email">
                     </div>
                     <div class="form-group">
                       <label for="message">Message</label>
                       <textarea class="form-control" id="message" rows="3"></textarea>
                     </div>
-                    <button type="submit" class="btn btn contact-form-button">Submit</button>
+                    <button type="submit" class="btn btn-important">submit</button>
                   </form>
                 </div>
-                <!--adding map with location pinned-->
                 <div class="col-md-6">
-                  <h3 class="map">Location</h3>
-                  <div id="map" style="height: 200px;"></div>
-                  <script>
-                    function initMap() {
-                      var location = {lat: 29.74560, lng: 30.99210}; // Change these coordinates to your desired location
-                      var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 14,
-                        center: location
-                      });
-                      var marker = new google.maps.Marker({
-                        position: location,
-                        map: map
-                      });
-                    }
-                  </script>
-                  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+                  <h3>Location</h3>
+                  <div id="map" style="height: 200px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55440.05730276193!2d30.94555478768943!3d-29.719655513060218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7040b992ed919%3A0x1acaead64649e850!2s137%20Sikhindi%20Rd%2C%20Emgidweni%2C%20KwaMashu%2C%204051!5e0!3m2!1sen!2sza!4v1681175528197!5m2!1sen!2sza" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_flY1p6XMUhl3buMM3suL1hFipt-E4rU&callback=initMap" async defer></script></div>
+                 
                 </div>
               </div>
               <div class="row mt-3">
@@ -235,10 +268,13 @@
                 </div>
               </div>
             </div>
+            <hr class="line">
+            <div class="copyright">
+              <p>&#169<a href-="https://www.instagram.com/hlobi_lukhele/" target="_blank" class="designer">Hlobi Lukhele,</a> All Right Reserved</p>
+              <p class="designer">Designed by <strong>Hlobisile Jenise Lukhele</strong></p>
+            </div>
           </footer>
         </footer>
       </section>
-      
-  
 </body>
 </html>
