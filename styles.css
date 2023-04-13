@@ -34,7 +34,7 @@ html{
   height: 380px;
 }
 #Services{
-  height:1750px;
+  height:1250px;
   width:100%;
 }
 .contact-us {
@@ -236,6 +236,9 @@ html{
       width: 100%;
       background-color: #FFEAEA;
       margin-bottom: 1%;
+    }
+    .portfolio {
+      height: 1500px;
     }
     .about-us {
       height: 450px;
