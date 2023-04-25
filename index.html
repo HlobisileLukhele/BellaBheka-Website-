@@ -22,12 +22,31 @@
 <body>
   <section id="home">
 <!--Loading the navigation bar-->
-<nav id="navbar">
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">Contact</a>
-  <button id="toggle-button">Menu</button>
-</nav>
+-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#"><em>BellaBheka</em></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact-us</a>
+      </li>
+    </ul>
+  </div>
+  </nav>
 <main>
  <!--loading carousel slide container-->
  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
