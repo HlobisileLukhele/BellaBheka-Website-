@@ -14,6 +14,49 @@ html{
   
 }
 /* Styling navigation bar*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  height: 50px;
+  padding: 0 20px;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px;
+}
+
+#toggle-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    transition: left 0.3s ease;
+  }
+
+  #navbar a {
+    padding: 10px 20px;
+  }
+
+  #toggle-button {
+    display: block;
+  }
+
+  #navbar.show {
+    left: 0;
+  }
+}
 
 /*Adding carousel slide-show to the first show*/
 #carouselExampleAutoplaying{
@@ -388,5 +431,5 @@ label {
   font-family: sans-serif;
 }
 hr {
-  color: #55163f:
+  color: #55163f;
 }
