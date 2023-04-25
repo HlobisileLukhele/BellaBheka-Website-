@@ -24,15 +24,15 @@ html{
   height: 60%;
 }
 #Portfoli {
-  height:7000px;
+  height:500px;
 }
 #about-us {
   height: 380px;
 }
 #Services{
-  height:1250px;
+  height:550px;
   width:100%;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
 }
 .contact-us {
   height:650px;
@@ -289,18 +289,27 @@ html{
       column-gap: 10px;
     }
     /*Styling the contact section */
+    footer{
+     margin-top: 0px;
+      margin-top: 10%;
+      align-items: center;
+    } 
     .contact-us {
       height:150px;
       width:100%
     }
     label {
-      margin: 9px 8px 5px 5px;
+      margin: 10px 10px 8px 8px;
     }
     .email-details {
       text-align: center;
+      align-items: center;
+      right: 50%;
     }
     .contact-info {
       text-align: center;
+      margin-top: 25px;
+      color: #9e367b;
     }
     .Contact_address {
       text-align: center;
@@ -327,12 +336,18 @@ h2
   color: #9e367b;
   right: 15px;
 }
+label {
+  margin: 10px 10px 8px 8px;
+}
 .Contact_address {
   margin-top: 5px;;
   line-height: 5px;
 }
 .email-us,h4 {
   color: #9e367b;
+}
+.map {
+  margin-bottom: 5px;
 }
 .follow-us {
   color: #9e367b;
@@ -346,24 +361,32 @@ h2
 .social-link {
   color: #55163f;
   padding: 5px 18px;
-  align-items: center;
+  align-items: right;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   transition: all 300ms ease;
-  text-align: center;
+  text-align: right;
 }
 .social-link:hover {
   transition: all ease-out;
 }
 .copyright {
-  background-color: #f1ecf1;
-  color:gray;
+  color:#b44e8d;
+  
+}
+.stcopyright {
+  text-align: left;
 }
 .designer {
-  color:gray;
+  color:#b44e8d;
+  align-items: left;
 }
 .myname {
   margin-right: 5px;
   text-decoration: none;
-  text-underline-offset: none;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+hr {
+  color: #55163f:
 }
