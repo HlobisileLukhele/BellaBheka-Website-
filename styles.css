@@ -69,20 +69,28 @@ html{
 }
 #carouselExampleAutoplaying img {
   height: 60%;
+  margin: 0 auto;
+}
+.d-block img {
+  display: block;
+  margin: 0 auto;
+}
+img {
+  margin: 0 auto;
 }
 #Portfoli {
-  height:500px;
+  height:800px;
 }
 #about-us {
   height: 380px;
 }
 #Services{
-  height:550px;
+  height:12ssss50px;
   width:100%;
-  margin-bottom: 20px;
+  margin-bottom: 120px;
 }
 .contact-us {
-  height:650px;
+  height:850px;
   width:100%
 }
 /*styling the content, font of the website's content*/
@@ -290,7 +298,7 @@ html{
       margin-bottom: 10px;
     }
     .services {
-      height:750px;
+      height:950px;
       width:100%;
       margin-top: 0px;;
     }
