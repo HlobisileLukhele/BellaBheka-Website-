@@ -1,5 +1,4 @@
 // styling navigation bar
-// JavaScript
 const navbar = document.getElementById("navbar");
 const toggleButton = document.getElementById("toggle-button");
 

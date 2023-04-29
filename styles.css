@@ -18,12 +18,14 @@ html{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
   color: white;
   height: 50px;
   padding: 0 10px;
 }
-
+#navbar:hover {
+  color:#9A208C;
+  
+}
 #navbar a {
   display: block;
   padding: 5px;
@@ -31,6 +33,7 @@ html{
 
 #toggle-button {
   display: none;
+  background-color: black;
 }
 
 @media (max-width: 768px) {
@@ -43,6 +46,7 @@ html{
     width: 200px;
     height: 100%;
     transition: left 0.3s ease;
+    background-color: rgb(43, 42, 42);
   }
 
   #navbar a {
