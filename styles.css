@@ -64,7 +64,7 @@ html{
 
 /*Adding carousel slide-show to the first show*/
 #carouselExampleAutoplaying{
- margin-top: 12% ;
+ margin-top: 0 ;
  border:  10pt transparent;
 }
 #carouselExampleAutoplaying img {
@@ -342,6 +342,11 @@ img {
       margin-top: 25px;
       row-gap: 2.0rem;
       column-gap: 10px;
+    }
+    /* styling portfolio section*/
+    .img-fluid {
+      display: block;
+      margin: 0 auto;
     }
     /*Styling the contact section */
     footer{
