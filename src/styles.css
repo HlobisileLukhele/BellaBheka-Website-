@@ -3,7 +3,7 @@
   --heading-color:#9e367b;
   --button-text:#ffff;
   --normal-text:#000;
-   --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  --box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 * {
   margin: 0;
@@ -62,12 +62,12 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: gray;
-  margin:28px 35px 35px 20px ;
+  margin:28px 35px 45px 20px ;
   font-weight: bold;
   text-align:center
 }
 .secondName{
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color:var(--heading-color);
   font-weight: bold;
@@ -89,9 +89,10 @@ body {
   background: var(--heading-color);
   overflow: hidden;
   border: 1px solid var(--heading-color);
-  left: 39%;
+  left: 34%;
   align-items: center;
-  margin: 0px 5px 0 15px;
+  margin: 0px 5px 25px 15px;
+  box-shadow: var(--box-shadow);
 }
 /*adding sliding hovering effect to the button*/
 .button-sliding-to-top--red:hover {
@@ -115,19 +116,19 @@ background:var(--button-text);
 
 /* Styling About section*/
 .container-fluid {
-  margin: 45px;
+  
   text-align: center;
 }
 .hookup-text{
-  margin-top: 45px;
-  font-family:helvetica;
+  padding-top: 55px;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   color:var(--heading-color);
 }
 /* applying slide in text animation to the first paragraph*/
-.first-touch, .second-touch,.first-intro,.last-touch{
+.first-touch, .last-touch{
   font-size: 20px;
   word-wrap: normal;
   text-align: center;
@@ -148,4 +149,6 @@ background:var(--button-text);
   text-align: center;
   color: var(--button-color);
   font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 35px;
 }
