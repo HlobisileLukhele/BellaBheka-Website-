@@ -1,6 +1,6 @@
 :root {
-  --button-color:#8B1874;
-  --heading-color:#B71375;
+  --button-color:#7a0b64;
+  --heading-color:#9e367b;
   --button-text:#ffff;
   --normal-text:#000;
    --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -89,9 +89,9 @@ body {
   background: var(--heading-color);
   overflow: hidden;
   border: 1px solid var(--heading-color);
-  left: 36%;
+  left: 35%;
   align-items: center;
-  margin-top: 0px 5px 0px 15px;
+  margin: 0px 5px 0 15px;
 }
 /*adding sliding hovering effect to the button*/
 .button-sliding-to-top--red:hover {
@@ -111,4 +111,32 @@ bottom: 0;
 height: 0;
 width: 100%;
 background:var(--button-text);
+}
+/* Styling introduction text*/
+.container-fluid {
+  margin: 45px;
+  text-align: center;
+}
+.hookup-text{
+  margin-top: 45px;
+  font-family:helvetica;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color:var(--heading-color);
+}
+/* applying slide in text animation to the first paragraph*/
+.first-touch, .second-touch,.first-intro,.last-touch{
+  font-size: 20px;
+  word-wrap: normal;
+  text-align: center;
+  word-spacing: 5px;
+  line-height: 1.4;
+  font-weight: 5px;
+  font-family: sans-serif;
+}
+.span-text {
+  font-family:sans-serif;
+  color:var(--heading-color);
+  font-weight: bold;
 }
