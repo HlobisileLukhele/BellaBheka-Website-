@@ -11,7 +11,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 .nav-link {
   color: var(--normal-text) !important;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight:bolder !important;
   text-align: left !important;
   display: flex !important;
@@ -52,4 +52,63 @@ body {
 .active {
   color: var(--button-text) !important;
   font-weight: bold;
+}
+/*Styling carousel for screen max 798px */
+
+
+
+/*styling the content, font of the website's content*/
+.first-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: gray;
+  margin:28px 35px 35px 20px ;
+  font-weight: bold;
+  text-align:center
+}
+.secondName{
+  font-family: sans-serif;
+  font-size: 18px;
+  color:var(--button-color);
+  font-weight: bold;
+  margin-left: 5px;
+}
+/*styling the button, making is responsive */
+.button-sliding-to-top--red{
+  height: 40px;
+  color:var(--button-text);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 1.25s ease;
+  position: relative;
+  display: flex;
+  outline: none;
+  border-radius: 5px;
+  z-index: 0;
+  background: var(--heading-color);
+  overflow: hidden;
+  border: 1px solid var(--heading-color);
+  left: 35%;
+  align-items: center;
+  margin-top: 0px 5px 0px 15px;
+}
+/*adding sliding hovering effect to the button*/
+.button-sliding-to-top--red:hover {
+background:var(--button-text);
+color: var(--heading-color)
+}
+.button-sliding-to-top--red:hover:after {
+height: 100%;
+}
+.button-sliding-to-top--red:after {
+content: "";
+position: absolute;
+z-index: -1;
+transition: all 0.3s ease;
+left: 0;
+bottom: 0;
+height: 0;
+width: 100%;
+background:var(--button-text);
 }
