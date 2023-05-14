@@ -1,9 +1,9 @@
 :root {
   --button-color:#8B1874;
   --heading-color:#B71375;
-  --normal-text:#0000;
   --button-text:#ffff;
-  --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  --normal-text:#000;
+   --box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 * {
   margin: 0;
@@ -16,7 +16,40 @@ body {
 }
 
 /* styling Navigation bar*/
- 
+.bg-purple {
+  background-color:var(--heading-color)!important ;
+}
+
+.page {
+  color: var(--button-text) !important;
+  font-weight:bolder !important;
+}
+
+.nav-item {
+  margin: 0 35px 0px 20px !important;
+  color: var(--normal-text) !important;
+
+}
+.nav-link {
+  color: var(--normal-text) !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight:bolder !important;
+  text-align: left !important;
+  display: flex !important;
+  justify-content: flex-start !important;
+}
+.nav-link:hover {
+  font-weight: bold !important;
+  color: var(--button-text) !important;
+}
 .navbar-brand {
-  font-family: 'Great Vibes', cursive !important;
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px !important;
+  margin: 0 35px 0px 20px !important;
+  color: var(--normal-text) !important;
+  
+}
+.active {
+  color: var(--button-text) !important;
+  font-weight: bold;
 }
