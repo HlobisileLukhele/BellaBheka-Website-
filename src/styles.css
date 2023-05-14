@@ -89,7 +89,7 @@ body {
   background: var(--heading-color);
   overflow: hidden;
   border: 1px solid var(--heading-color);
-  left: 34%;
+  left: 30%;
   align-items: center;
   margin: 0px 5px 25px 15px;
   box-shadow: var(--box-shadow);
@@ -159,7 +159,6 @@ background:var(--button-text);
   background: var(--heading-color);
   color: var(--button-text) !important;
   border: 1pt solid var(--button-color) !important;
-  max-height: 500px;
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
