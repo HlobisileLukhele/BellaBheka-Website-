@@ -89,7 +89,7 @@ body {
   background: var(--heading-color);
   overflow: hidden;
   border: 1px solid var(--heading-color);
-  left: 38%;
+  left: 39%;
   align-items: center;
   margin: 0px 5px 0 15px;
 }
@@ -112,7 +112,8 @@ height: 0;
 width: 100%;
 background:var(--button-text);
 }
-/* Styling introduction text*/
+
+/* Styling About section*/
 .container-fluid {
   margin: 45px;
   text-align: center;
@@ -133,10 +134,18 @@ background:var(--button-text);
   word-spacing: 5px;
   line-height: 1.4;
   font-weight: 5px;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 .span-text {
   font-family:sans-serif;
   color:var(--heading-color);
+  font-weight: bold;
+}
+/*Styling services section*/
+
+.services {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: var(--button-color);
   font-weight: bold;
 }
