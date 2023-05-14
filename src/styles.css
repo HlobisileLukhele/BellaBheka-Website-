@@ -152,3 +152,33 @@ background:var(--button-text);
   text-transform: uppercase;
   padding-top: 35px;
 }
+.card {
+  height: auto
+}
+.card-body {
+  background: var(--heading-color);
+  color: var(--button-text) !important;
+  border: 1pt solid var(--button-color) !important;
+  max-height: 500px;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+  height: 850px;
+
+  margin-bottom:50px;
+}
+.card-title {
+  color: var(--normal-text) !important;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.card-border {
+  border-radius: 10px;
+}
+li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
