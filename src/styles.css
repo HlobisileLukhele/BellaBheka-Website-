@@ -10,6 +10,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
@@ -53,10 +56,28 @@ body {
   color: var(--button-text) !important;
   font-weight: bold;
 }
-/*Styling carousel for screen max 798px */
+/*Styling carousel */
 
+/*Responsive layout : when the screen is less than 922px wide */
+@media only screen and (min-width: 992px) {
+.d-block {
+  width: 100%;
+  height: 600px;
+}
+}
+.button-sliding-to-top--red{
+  left: 45% !important;
+}
 
-
+  /*Responsive layout : when the screen is less than 600px wide*/
+@media (max-width: 600px) {
+  .button-sliding-to-top--red{
+    left: 30% !important;
+  }
+  .portfolio {
+    height: 300px !important;
+  }
+}
 /*styling the content, font of the website's content*/
 .first-heading {
   font-family: 'Roboto', sans-serif;
@@ -89,7 +110,6 @@ body {
   background: var(--heading-color);
   overflow: hidden;
   border: 1px solid var(--heading-color);
-  left: 30%;
   align-items: center;
   margin: 0px 5px 25px 15px;
   box-shadow: var(--box-shadow);
@@ -128,7 +148,8 @@ background:var(--button-text);
   color:var(--heading-color);
 }
 /* applying slide in text animation to the first paragraph*/
-.first-touch, .last-touch{
+ .first-touch,
+ .last-touch{
   font-size: 20px;
   word-wrap: normal;
   text-align: center;
@@ -164,8 +185,7 @@ background:var(--button-text);
   font-size: 20px;
   text-align: center;
   height: 850px;
-
-  margin-bottom:50px;
+  margin-bottom:25px;
 }
 .card-title {
   color: var(--normal-text) !important;
@@ -182,3 +202,84 @@ li {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+/*Styling our Work section */
+.our-work {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: var(--button-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 35px;
+}
+
+/*styling contact section*/
+ .form-contact,
+ .location {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: var(--button-text);
+  font-weight: bold;
+  padding-top: 28px;
+}
+.location {
+ margin-top: 27px;
+}
+.pinned {
+  color:var(--button-color);
+  font-size: 17px
+}
+label {
+  color:var(--button-color);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 17px
+}
+.bg-dark {
+  background: #4b4549 !important;
+}
+.btn-secondary{
+  color:var(--button-text) !important;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none !important;
+  background: var(--heading-color) !important;
+  order: 1px solid var(--heading-color) !important;
+  margin: 0px 5px 20px 200px;
+  box-shadow: var(--box-shadow) !important;
+  text-align: center;
+ }
+ .btn-secondary:hover {
+  background:var(--button-text) !important;
+  color: var(--heading-color) !important;
+ }
+ .contact-info-div {
+  color: var(--heading-color);
+  text-align: center;
+  font-weight: bold;
+ }
+ .contact-info,
+ .follow-us {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: var(--button-text);
+  font-weight: bold;
+  padding-top: 25px;
+ }
+ 
+ .fab {
+  padding: 0 25px 10px 65px;
+  border-radius: 50%;
+
+ }
+ .copyright {
+  color: var(--button-text);
+  text-align: center !important;
+  
+ }
+ a {
+  text-decoration:none;
+  color: var(--button-color);
+ }
+ .line {
+  color: var(--button-text) !important;
+ }
