@@ -40,3 +40,21 @@ $(".owl-carousel").owlCarousel({
   itemsMobile : [479,1]
 
 })
+
+//calling the plugin 
+$(".owl-carousel").owlCarousel()
+ 
+//get carousel instance data and store it in variable owl
+var owl = $(".owl-carousel").data('owlCarousel');
+ 
+//Public methods
+owl.next()   
+owl.prev()   
+owl.goTo(x)  
+ 
+owl.update() 
+ 
+owl.buildControlls()    
+owl.destroyControlls()  
+ 
+owl.play() // Autoplay
