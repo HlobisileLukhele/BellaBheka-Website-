@@ -213,7 +213,14 @@ li {
   text-transform: uppercase;
   padding-top: 35px;
 }
-
+#owl-demo .item{
+  margin: 3px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /*styling contact section*/
  .form-contact,
  .location {
