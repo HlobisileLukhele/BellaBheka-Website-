@@ -68,7 +68,7 @@ body {
 .button-sliding-to-top--red{
   left: 45% !important;
 }
-.overflow-x-scrol{
+.overflow-x-scroll{
   max-height:180px !important;
 }
   /*Responsive layout : when the screen is less than 600px wide*/
