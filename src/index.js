@@ -6,28 +6,44 @@ toggleButton.addEventListener("click", function() {
   navbar.classList.toggle("show");
 });
 
-<<<<<<< Updated upstream
-//Implementing the slider carousel
+//owl carousel slider 
 
-=======
-//Implementing the Slick Slider
->>>>>>> Stashed changes
 $(document).ready(function() {
  
   $("#owl-demo").owlCarousel({
  
-<<<<<<< Updated upstream
-      autoPlay: 4000, //Set AutoPlay to 3 seconds
- 
-      items : 8,
-=======
       autoPlay: 3000, //Set AutoPlay to 3 seconds
  
       items : 4,
->>>>>>> Stashed changes
       itemsDesktop : [1199,3],
       itemsDesktopSmall : [979,3]
  
   });
  
 });
+
+//counter function 
+
+const yearsOfExperience = 15;
+const teamMembers = 8;
+const happyClients = 25;
+
+function animateCounter(target, value) {
+  const start = 0;
+  const duration = 2000; // 2 seconds animation duration
+  const stepTime = Math.abs(Math.floor(duration / value));
+
+  let timer = setInterval(() => {
+    start++;
+    document.getElementById(target).textContent = start;
+    if (start === value) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+}
+
+animateCounter('yearsCount', yearsOfExperience);
+animateCounter('teamCount', teamMembers);
+animateCounter('clientsCount', happyClients);
+
+
