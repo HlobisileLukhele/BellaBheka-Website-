@@ -1,62 +1,53 @@
-// styling navigation bar
-const navbar = document.getElementById("navbar");
-const toggleButton = document.getElementById("toggle-button");
 
-toggleButton.addEventListener("click", function() {
-  navbar.classList.toggle("show");
-});
+// carousel slider 
 
-//owl carousel slider 
+const flavoursContainer = document.getElementById('flavoursContainer');
+const flavoursScrollWidth = flavoursContainer.scrollWidth;
 
-$(document).ready(function() {
- 
-  $("#owl-demo").owlCarousel({
- 
-      autoPlay: 3000, //Set AutoPlay to 3 seconds
- 
-      items : 9,
-      itemsDesktop : [1199,9],
-      itemsDesktopSmall : [979,9]
- 
-  });
- 
+window.addEventListener('load', () => {
+  self.setInterval(() => {
+    if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
+      flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
+    }
+  }, 15);
 });
 
 //counter function 
 
-function updateCounters() {
-  document.getElementById("yearsCount").textContent = yearsOfExperience;
-  document.getElementById("teamCount").textContent = teamMembers;
-  document.getElementById("clientsCount").textContent = happyClients;
-}
-
-// Call the updateCounters() function initially
-updateCounters();
-
-// Update the counters every second
-setInterval(updateCounters, 1000);
-
+// Constants for the counters
 const yearsOfExperience = 15;
 const teamMembers = 8;
 const happyClients = 25;
 
+// Function to animate the counter from 0 to the target value
 function animateCounter(target, value) {
-  const start = 0;
+  let currentCount = 0; // Initialize the counter at 0
   const duration = 2000; // 2 seconds animation duration
-  const stepTime = Math.abs(Math.floor(duration / value));
+  const stepTime = Math.abs(Math.floor(duration / value)); // Calculate the step time to achieve the target value in 2 seconds
 
-  let timer = setInterval(() => {
-    start++;
-    document.getElementById(target).textContent = start;
-    if (start === value) {
-      clearInterval(timer);
+  const timer = setInterval(() => {
+    currentCount++;
+    document.getElementById(target).textContent = currentCount;
+    if (currentCount === value) {
+      clearInterval(timer); // Stop the timer when the counter reaches the target value
     }
   }, stepTime);
 }
 
-animateCounter('yearsCount', yearsOfExperience);
-animateCounter('teamCount', teamMembers);
-animateCounter('clientsCount', happyClients);
+// Initially update the counters without animation
+document.getElementById("yearsCount").textContent = yearsOfExperience;
+document.getElementById("teamCount").textContent = teamMembers;
+document.getElementById("clientsCount").textContent = happyClients;
 
+// Update the counters every second
+setInterval(() => {
+  // Increment the counters by 1 every second
+  yearsOfExperience++;
+  teamMembers++;
+  happyClients++;
 
-
+  // Update the displayed values using the animateCounter function
+  animateCounter("yearsCount", yearsOfExperience);
+  animateCounter("teamCount", teamMembers);
+  animateCounter("clientsCount", happyClients);
+}, 1000);

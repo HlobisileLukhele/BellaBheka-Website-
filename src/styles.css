@@ -218,7 +218,7 @@ li {
 }
 .flavoursContainer {
   width: 100%;
-  height:300px;
+  height:auto;
   overflow-x: scroll;
   white-space: nowrap;
   background-color: #fff;
