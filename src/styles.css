@@ -223,10 +223,6 @@ li {
   white-space: nowrap;
   background-color: #fff;
 }
-.slides {
-  width:400px;
-  height:300px;
-}
 
 /* styling the counter section */
 .counter {
