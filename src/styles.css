@@ -216,51 +216,42 @@ li {
   text-transform: uppercase;
   padding-top: 35px;
 }
-.carousel-container {
-  max-width: 400px; /* Adjust the container width as per your requirement */
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Prevent images from wrapping to the next line */
+.flavoursContainer {
+  width: 100%;
+  height:300px;
+  overflow-x: scroll;
+  white-space: nowrap;
+  background-color: #fff;
 }
-
-.carousel-container .item img {
-  width: 400px; /* Adjust the image width to make them medium-sized */
-  height: 300px ; /* Maintain aspect ratio */
-}
-
-#owl-demo .item{
-  margin: 3px;
-}
-#owl-demo .item img{
-  display: block;
-  width:  400px auto;
-  height:auto;
+.slides {
+  width:400px;
+  height:300px;
 }
 
 /* styling the counter section */
-
-.container-fluid-counter{
-  background-color: #df60b9; /* Light purple background */
-  color: white; /* White text color */
-}
-
 .counter {
   display: flex;
-  justify-content: space-between;
-  max-width: 300px;
-  margin: 0 auto;
+  justify-content: center;
+  background-color: #df60b9;
+  margin-top: 30px;
+  color: white; /* White text color */
+  margin-bottom:15px;
+  max-width: auto;
+  height:auto;
 }
 
 .counter-item {
   text-align: center;
+  padding:5px;
 }
 
 .count {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: bold;
 }
 
 .label {
-  font-size: 14px;
+  font-size: 20px;
   color: #555;
 }
 
