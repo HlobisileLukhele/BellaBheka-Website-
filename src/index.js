@@ -24,6 +24,18 @@ $(document).ready(function() {
 
 //counter function 
 
+function updateCounters() {
+  document.getElementById("yearsCount").textContent = yearsOfExperience;
+  document.getElementById("teamCount").textContent = teamMembers;
+  document.getElementById("clientsCount").textContent = happyClients;
+}
+
+// Call the updateCounters() function initially
+updateCounters();
+
+// Update the counters every second
+setInterval(updateCounters, 1000);
+
 const yearsOfExperience = 15;
 const teamMembers = 8;
 const happyClients = 25;
@@ -45,5 +57,6 @@ function animateCounter(target, value) {
 animateCounter('yearsCount', yearsOfExperience);
 animateCounter('teamCount', teamMembers);
 animateCounter('clientsCount', happyClients);
+
 
 
