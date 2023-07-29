@@ -216,14 +216,26 @@ li {
   text-transform: uppercase;
   padding-top: 35px;
 }
+.carousel-container {
+  max-width: 400px; /* Adjust the container width as per your requirement */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent images from wrapping to the next line */
+}
+
+.carousel-container .item img {
+  width: 400px; /* Adjust the image width to make them medium-sized */
+  height: 300px ; /* Maintain aspect ratio */
+}
+
 #owl-demo .item{
   margin: 3px;
 }
 #owl-demo .item img{
   display: block;
-  width: 100%;
-  height: auto;
+  width:  400px auto;
+  height:auto;
 }
+
 /* styling the counter section */
 
 .container-fluid-counter{
@@ -254,69 +266,7 @@ li {
 
 
 /*styling contact section*/
- .form-contact,
- .location {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  color: var(--button-text);
-  font-weight: bold;
-  padding-top: 28px;
-}
-.location {
- margin-top: 27px;
-}
-.pinned {
-  color:var(--button-color);
-  font-size: 17px
-}
-label {
-  color:var(--button-color);
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 17px
-}
-.bg-dark {
-  background: #4b4549 !important;
-}
-.btn-secondary{
-  color:var(--button-text) !important;
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none !important;
-  background: var(--heading-color) !important;
-  order: 1px solid var(--heading-color) !important;
-  margin: 0px 5px 20px 200px;
-  box-shadow: var(--box-shadow) !important;
-  text-align: center;
- }
- .btn-secondary:hover {
-  background:var(--button-text) !important;
-  color: var(--heading-color) !important;
- }
- .contact-info-div {
-  color: var(--heading-color);
-  text-align: center;
-  font-weight: bold;
- }
- .contact-info,
- .follow-us {
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  color: var(--button-text);
-  font-weight: bold;
-  padding-top: 25px;
- }
- 
- .fab {
-  padding: 0 25px 10px 65px;
-  border-radius: 50%;
 
- }
- .copyright {
-  color: var(--button-text);
-  text-align: center !important;
-  
- }
  a {
   text-decoration:none;
   color: var(--button-color);
