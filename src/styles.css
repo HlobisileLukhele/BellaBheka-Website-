@@ -204,6 +204,9 @@ li {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.testimony-name {
+  color:var(--button-color);
+}
 /*Styling our Work section */
 .our-work {
   font-family: 'Roboto', sans-serif;
@@ -221,10 +224,35 @@ li {
   width: 100%;
   height: auto;
 }
-<<<<<<< Updated upstream
-=======
+/* styling the counter section */
 
->>>>>>> Stashed changes
+.container-fluid-counter{
+  background-color: #df60b9; /* Light purple background */
+  color: white; /* White text color */
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.counter-item {
+  text-align: center;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 14px;
+  color: #555;
+}
+
+
 /*styling contact section*/
  .form-contact,
  .location {
@@ -295,4 +323,10 @@ label {
  }
  .line {
   color: var(--button-text) !important;
+ }
+ .text-uppercase {
+  color: var(--button-color) !important;
+ }
+ a {
+  text-decoration:none;
  }
