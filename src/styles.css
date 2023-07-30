@@ -19,6 +19,9 @@ body {
 }
 
 /* styling Navigation bar*/
+
+
+
 .bg-purple {
   background-color:var(--heading-color)!important ;
 }
@@ -27,6 +30,7 @@ body {
   color: var(--button-text) !important;
   font-weight:bolder !important;
 }
+
 
 .nav-item {
   margin: 0 35px 0px 20px !important;
@@ -90,11 +94,11 @@ body {
   text-align:center
 }
 .secondName{
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
+  
+  
   color:var(--heading-color);
-  font-weight: bold;
-  margin-left: 5px;
+  
+  
 }
 /*styling the button, making is responsive */
 .button-sliding-to-top--red{
@@ -222,10 +226,6 @@ li {
   overflow-x: scroll;
   white-space: nowrap;
   background-color: #fff;
-}
-.slides {
-  width:400px;
-  height:300px;
 }
 
 /* styling the counter section */
