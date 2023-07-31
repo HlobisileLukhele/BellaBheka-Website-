@@ -19,9 +19,6 @@ body {
 }
 
 /* styling Navigation bar*/
-
-
-
 .bg-purple {
   background-color:var(--heading-color)!important ;
 }
@@ -30,7 +27,6 @@ body {
   color: var(--button-text) !important;
   font-weight:bolder !important;
 }
-
 
 .nav-item {
   margin: 0 35px 0px 20px !important;
@@ -85,90 +81,21 @@ body {
   }
 }
 /*styling the content, font of the website's content*/
-.first-heading {
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  color: gray;
-  margin:28px 35px 45px 20px ;
-  font-weight: bold;
-  text-align:center
-}
-.secondName{
-  
-  
-  color:var(--heading-color);
-  
-  
-}
-/*styling the button, making is responsive */
-.button-sliding-to-top--red{
-  height: 40px;
-  color:var(--button-text);
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 1.25s ease;
-  position: relative;
-  display: flex;
-  outline: none;
-  border-radius: 5px;
-  z-index: 0;
-  background: var(--heading-color);
-  overflow: hidden;
-  border: 1px solid var(--heading-color);
-  align-items: center;
-  margin: 0px 5px 25px 15px;
-  box-shadow: var(--box-shadow);
-}
-/*adding sliding hovering effect to the button*/
-.button-sliding-to-top--red:hover {
-background:var(--button-text);
-color: var(--heading-color)
-}
-.button-sliding-to-top--red:hover:after {
-height: 100%;
-}
-.button-sliding-to-top--red:after {
-content: "";
-position: absolute;
-z-index: -1;
-transition: all 0.3s ease;
-left: 0;
-bottom: 0;
-height: 0;
-width: 100%;
-background:var(--button-text);
-}
 
 /* Styling About section*/
-.container-fluid {
-  
-  text-align: center;
-}
-.hookup-text{
+
+.hookup-text {
   padding-top: 55px;
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
-  color:var(--heading-color);
+  color: var(--heading-color);
 }
-/* applying slide in text animation to the first paragraph*/
- .first-touch,
- .last-touch{
-  font-size: 20px;
-  word-wrap: normal;
+.about-text {
   text-align: center;
-  word-spacing: 5px;
-  line-height: 1.4;
-  font-weight: 5px;
-  font-family: 'Roboto', sans-serif;
 }
-.span-text {
-  font-family:sans-serif;
-  color:var(--heading-color);
-  font-weight: bold;
-}
+
 /*Styling services section*/
 
 .services {
@@ -180,17 +107,17 @@ background:var(--button-text);
   padding-top: 35px;
 }
 .card {
-  height: auto
+  height: auto;
 }
 .card-body {
   background: var(--heading-color);
   color: var(--button-text) !important;
   border: 1pt solid var(--button-color) !important;
-  max-height: 500px;
+  max-height: 550px;
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
-  height: 850px;
+  height: 840px;
   margin-bottom:25px;
 }
 .card-title {
