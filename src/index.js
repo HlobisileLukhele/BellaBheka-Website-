@@ -1,16 +1,17 @@
 
 // // // carousel slider 
 
-// // const flavoursContainer = document.getElementById('flavoursContainer');
-// // const flavoursScrollWidth = flavoursContainer.scrollWidth;
+const flavoursContainer = document.getElementById('flavoursContainer');
+const flavoursScrollWidth = flavoursContainer.scrollWidth;
 
-// // window.addEventListener('load', () => {
-// //   self.setInterval(() => {
-// //     if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
-// //       flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
-// //     }
-// //   }, 15);
-// // });
+window.addEventListener('load', () => {
+  self.setInterval(() => {
+    if (flavoursContainer.scrollLeft !== flavoursScrollWidth) {
+      flavoursContainer.scrollTo(flavoursContainer.scrollLeft + 1, 0);
+    }
+  }, 15);
+});
+
 
 // //counter function 
 
