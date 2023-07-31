@@ -154,6 +154,10 @@ li {
   white-space: nowrap;
   background-color: #fff;
 }
+.portfolio {
+  max-width: 300px !important;
+  max-height: 300px !important;
+}
 
 /* styling the counter section */
 .counter {
