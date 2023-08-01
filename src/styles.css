@@ -113,7 +113,7 @@ body {
   background: var(--heading-color);
   color: var(--button-text) !important;
   border: 1pt solid var(--button-color) !important;
-  max-height: 550px;
+  max-height: 580px;
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
