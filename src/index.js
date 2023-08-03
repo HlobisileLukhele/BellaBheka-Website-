@@ -51,3 +51,6 @@
 //   animateCounter("teamCount", teamMembers);
 //   animateCounter("clientsCount", happyClients);
 // }, 1000);
+
+
+
