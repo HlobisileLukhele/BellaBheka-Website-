@@ -194,11 +194,12 @@ li {
   margin-bottom:15px;
   max-width: auto;
   height:auto;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 .counter-item {
   text-align: center;
   padding:10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .count {
   font-size: 34px;
