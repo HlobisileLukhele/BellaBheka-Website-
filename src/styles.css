@@ -148,6 +148,23 @@ li {
 .testimony-name {
   color:var(--button-color);
 }
+
+/* Add this CSS code to define the slide-up animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
 /*Styling our Work section */
 .our-work {
   font-family: 'Roboto', sans-serif;
