@@ -92,7 +92,22 @@ body {
   font-size: 20px;
   color: var(--heading-color);
 }
+
+.sophisticated-paragraphs p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+  color: #333;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .about-text {
+  font-style: italic;
+  color: #555;
   text-align: center;
 }
 
