@@ -173,7 +173,7 @@ li {
 .counter {
   display: flex;
   justify-content: center;
-  background-color: var(--heading-color);
+  background-color: var(--button-text);
   margin-top: 30px;
   color: white; /* White text color */
   margin-bottom:15px;
@@ -189,6 +189,7 @@ li {
 .count {
   font-size: 34px;
   font-weight: bold;
+  color: var(--heading-color);
 }
 
 .label {
