@@ -127,9 +127,8 @@ body {
   border-radius: 10px;
   font-size: 20px;
   text-align: center;
-  height: 800px;
+  height: 750px;
   margin-bottom:5px;
-  margin-top: 5px;
 }
 .card-title {
   color: var(--normal-text) !important;
@@ -139,7 +138,6 @@ body {
   margin-bottom: 10px;
   margin-top: 5px;
 }
-
 .card-border {
   border-radius: 10px;
 }
