@@ -173,7 +173,7 @@ li {
 .counter {
   display: flex;
   justify-content: center;
-  background-color: #df60b9;
+  background-color: var(--heading-color);
   margin-top: 30px;
   color: white; /* White text color */
   margin-bottom:15px;
