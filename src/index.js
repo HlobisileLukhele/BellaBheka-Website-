@@ -42,9 +42,30 @@ window.addEventListener('load', () => {
     updateCount(el, intVal);
   });
 
-  const total = counts.reduce((acc, item) => acc + item.value, 0);
   const totalEl = document.querySelector('.total');
-  updateCount(totalEl, total);
+  totalEl.style.display = 'none';
+
+  const countUp = () => {
+    counts.forEach((item) => {
+      const { el, value } = item;
+      const intVal = parseInt(value, 10);
+      const countTo = intVal + 1;
+      const countInterval = setInterval(() => {
+        updateCount(el, countTo);
+        if (countTo >= intVal) {
+          clearInterval(countInterval);
+        }
+      }, 10);
+    });
+  };
+
+  const countInterval = setInterval(() => {
+    countUp();
+    if (counts.every((item) => parseInt(item.el.textContent, 10) >= parseInt(item.value, 10))) {
+      clearInterval(countInterval);
+      totalEl.style.display = 'block';
+    }
+  }, 1000);
 };
 
 countUp();
