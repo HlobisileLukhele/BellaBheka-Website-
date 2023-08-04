@@ -174,7 +174,7 @@ li {
   display: flex;
   justify-content: center;
   background-color: var(--button-text);
-  margin-top: 30px;
+  margin-top: 20px;
   color: white; /* White text color */
   margin-bottom:15px;
   max-width: auto;
