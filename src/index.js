@@ -59,3 +59,24 @@ function updateCounters() {
 // Call the updateCounters function to start the counter updates
 updateCounters();
 
+
+//animating the services cards
+
+const cardsContainer = document.querySelector('.cards-container');
+const cards = cardsContainer.querySelectorAll('.card');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('slide-up');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+cards.forEach(card => {
+  observer.observe(card);
+});
+  
+
+
