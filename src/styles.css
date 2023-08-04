@@ -98,7 +98,7 @@ body {
   margin: 20px 0;
   font-size: 18px;
   color: #333;
-  padding: 20px;
+  padding: 10px;
 }
 .about-text {
   font-style: italic;
@@ -190,20 +190,16 @@ li {
 .counter {
   display: flex;
   justify-content: center;
-  background-color: var(--button-text);
   margin-top: 20px;
-  color: white; /* White text color */
   margin-bottom:15px;
   max-width: auto;
   height:auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .counter-item {
   text-align: center;
   padding:10px;
 }
-
 .count {
   font-size: 34px;
   font-weight: bold;
