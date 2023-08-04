@@ -15,50 +15,39 @@ window.addEventListener('load', () => {
 
  //counter function 
 
- // Constants for the counters
-const yearsOfExperience = 5;
-const teamMembers = 4;
-const happyClients = 25;
+ const countUp = () => {
+  const count = document.querySelectorAll('.count');
 
-// Function to animate the counter from 0 to the target value
-function animateCounter(target, value) {
-  let currentCount = 0;
-  const duration = 2000;
-  const stepTime = Math.abs(Math.floor(duration / value));
+  const options = {
+    duration: 2000,
+    easing: 'linear',
+    separator: ',',
+    decimal: '.',
+  };
 
-  const timer = setInterval(() => {
-    currentCount++;
-    document.getElementById(target).textContent = currentCount;
-    if (currentCount === value) {
-      clearInterval(timer);
-    }
-  }, stepTime);
-}
+  const updateCount = (el, value) => {
+    const total = value.toLocaleString('en-US', options);
+    el.textContent = total;
+  };
 
-// Function to initialize and update the counters
-function updateCounters() {
-  // Initially update the counters without animation
-  document.getElementById("yearsCount").textContent = yearsOfExperience;
-  document.getElementById("teamCount").textContent = teamMembers;
-  document.getElementById("clientsCount").textContent = happyClients;
+  const counts = [
+    { el: count[0], value: 5 },
+    { el: count[1], value: 8 },
+    { el: count[2], value: 25 },
+  ];
 
-  // Update the counters every second
-  setInterval(() => {
-    // Increment the counters by 1 every second
-    yearsOfExperience++;
-    teamMembers++;
-    happyClients++;
+  counts.forEach((item) => {
+    const { el, value } = item;
+    const intVal = parseInt(value, 10);
+    updateCount(el, intVal);
+  });
 
-    // Update the displayed values using the animateCounter function
-    animateCounter("yearsCount", yearsOfExperience);
-    animateCounter("teamCount", teamMembers);
-    animateCounter("clientsCount", happyClients);
-  }, 1000);
-}
+  const total = counts.reduce((acc, item) => acc + item.value, 0);
+  const totalEl = document.querySelector('.total');
+  updateCount(totalEl, total);
+};
 
-// Call the updateCounters function to start the counter updates
-updateCounters();
-
+countUp();
 
 //animating the services cards
 
